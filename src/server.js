@@ -12,7 +12,7 @@ import { connectDatabase } from "./config/database.js";
 import productRouter from "./routes/productRouter.js";
 import musicaRouter from "./routes/MusicaRouter.js";
 import userRouter from "./routes/userRouter.js";
-
+import pokemonRouter from "./routes/PokemonRouter.js";
 // Procurando arquivos
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -37,7 +37,7 @@ app.use("/arquivoTeste", arquivoTesteController.initial);
 app.use("/products", productRouter);
 app.use("/auth",userRouter);
 app.use("/musicas",musicaRouter);
-
+app.use("/pokemons",pokemonRouter);
 
 // Função principal para iniciar o servidor
 app.listen(port, () => {

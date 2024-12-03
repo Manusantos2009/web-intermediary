@@ -5,7 +5,7 @@ const musicaRouter = Router();
 
 musicaRouter.get("/", MusicaController.getAllMusics);
 
-musicaRouter.post("/create", MusicaController.createMusica);
+musicaRouter.post("/create", MusicaController.createMusic);
 
 musicaRouter.get("/info/:id", MusicaController.getMusicById);
 
